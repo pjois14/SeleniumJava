@@ -36,7 +36,7 @@ public class JUnitTestClass {
     }
     
     @Test
-    public void test001() {
+    public void BingSearchFail() {
         driver.navigate().to("http://www.bing.com");
         driver.findElement(By.id("sb_form_q")).sendKeys("Hello World");
         // This test will demonstrate a fail as this id does not exist.
@@ -45,7 +45,7 @@ public class JUnitTestClass {
     }
     
     @Test
-    public void test002() {
+    public void BingSearchSuccessfull() {
         driver.navigate().to("http://www.bing.com");
         driver.findElement(By.id("sb_form_q")).sendKeys("Hello World");
         driver.findElement(By.id("sb_form_go")).click();
